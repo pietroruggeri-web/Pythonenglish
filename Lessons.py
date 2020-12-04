@@ -10,8 +10,7 @@ print(phrase.lower())  # per avere tute le lettere minuscole viceversa upper
 print(phrase.upper().isupper())  # operatori Boole
 print(len(phrase))  # conta i caratteri
 print(phrase[0])  # prima lettera della parola
-print(phrase.index(
-    "a"))  # cosa corrisponde il valore messo esempio a = 3/se il valore non è compreso da errore perchè non trova la lettera/numero
+print(phrase.index("a"))  # cosa corrisponde il valore messo esempio a = 3/se il valore non è compreso da errore perchè non trova la lettera/numero
 print(phrase.replace("Giraffe", "Elephant"))  # sostituire un valore con un altro
 
 #  WORKING WITH NUMBERS
