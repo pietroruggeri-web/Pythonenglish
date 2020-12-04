@@ -23,3 +23,11 @@ z = k * 3
 x = int(input('inserisci primo numero '))
 y = int(input('inserisci secondo numero'))
 print(x*y)
+
+
+
+po = float(input('Inserisci numero '))
+op = input('Inserisci un operando ')
+to = float(input('Inserisci '))
+if op== '+':
+    print(po + to)
