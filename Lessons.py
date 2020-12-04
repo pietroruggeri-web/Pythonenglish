@@ -116,3 +116,86 @@ else:
 
 #  IF STATEMENTS AND COMPARISON
 
+def max_num(num1,num2,num3):
+    if num1 >= num2 and num1 >=num3:
+        return num1
+    elif num2 >= num1 and num2 >= num3:
+        return num2
+    else:
+        return num3
+print(max_num(3, 40, 5)) #  == UGUALE, != DIVERSO
+
+#  BUILDING A BETTER CALCULATOR
+
+num1 = float(input("Enter first number: "))
+op = input("Enter operator: ")
+num2 = float(input("Enter second number: "))
+if op == "+":
+    print(num1 + num2)
+elif op == "-":
+    print(num1 - num2)
+elif op == "/":
+    print(num1 / num2)
+elif op == "*":
+    print(num1 * num2)
+else:
+    print("Invalid operator")
+
+#  DICTIONARIES
+
+monthConversions = {
+    "Jan": "January",
+    "Feb": "February",
+    "Mar": "March",
+    "Apr": "April",
+    "May": "May",
+    "Jun": "June",
+    "Jul": "July",
+    "Aug": "August",
+    "Sep": "September",
+    "Oct": "October",
+    "Nov": "November",
+    "Dec": "December",
+}
+print(monthConversions["May"])  # Inserendo la chiave come in esempio mi da il valore finale
+print(monthConversions.get("luv"),"-->","The key isn't correct")  # Con questa funzione get posso mettere qualsiasi valore sia compreso nel dizionario che no
+
+#  WHILE LOOP
+
+i = 1
+while i <= 10:  # Per creare un ciclo while metto una variabile
+    print(i)
+    i += 1
+
+print("Done with loop")
+
+#  BUILDING A GUESSING GAME
+
+secret_word = "giraffe"  # Prima di impostare un programma scelgo le variabili, ciclo più operatori Booleani
+guess = ""
+guess_count = 0
+guess_limit = 3
+out_of_guesses = False
+
+while guess != secret_word and not out_of_guesses:
+    if guess_count < guess_limit:
+        guess = input("Enter guess: ")
+        guess_count +=1
+    else:
+        out_of_guesses = True
+
+if out_of_guesses:
+    print("Out of Guesses, YOU LOSE!")
+else:
+    print("You Win!")
+
+#  FOR LOOP
+friends = ["Jim","Annie"]
+for friend in firends:  # Per ogni lettera della parola leggila
+    print(friend)
+for letter in "Giraffe Academy":
+    print(letter)
+for index in range(3, 10):  # Conta i numeri tra 3 e 10 escluso (Il secondo valore che metto per secondo non è mai compreso
+    print(index)
+
+
