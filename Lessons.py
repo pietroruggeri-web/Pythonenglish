@@ -16,7 +16,7 @@ print(phrase.replace("Giraffe", "Elephant"))  # sostituire un valore con un altr
 
 #  WORKING WITH NUMBERS
 
-import math  # solo le operazioni di matematica base sono in pyhon per le altre devo importare la libreria math
+import math  # solo le operazioni di matematica base sono in python per le altre devo importare la libreria math
 
 print(3 + 5)
 print(10 % 3)  # resto della divisione
@@ -83,7 +83,7 @@ print(friends2)
 
 #  TUPLES
 
-coordinates = (4, 5)  # Quando si crea una taple non si può modificare ne calcellare, se una lista puoi modificare ciò che vuoi
+coordinates = (4, 5)  # Quando si crea una taple non si può modificare ne canlcellare, se una lista puoi modificare ciò che vuoi
 print(coordinates[0])
 
 #  FUNCTIONS
