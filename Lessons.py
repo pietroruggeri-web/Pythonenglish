@@ -190,11 +190,63 @@ else:
 
 #  FOR LOOP
 friends = ["Jim","Annie"]
-for friend in firends:  # Per ogni lettera della parola leggila
+for friend in friends:  # Per ogni lettera della parola leggila
     print(friend)
 for letter in "Giraffe Academy":
     print(letter)
-for index in range(3, 10):  # Conta i numeri tra 3 e 10 escluso (Il secondo valore che metto per secondo non è mai compreso
+for index in range(3, 10):  # Conta i numeri tra 3 e 10 escluso (Il secondo valore che metto non è mai compreso)
     print(index)
 
+#  2D LISTS AND NESTED LOOPS
+
+number_grid = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9],
+    [0]
+]
+print(number_grid[0][0])
+print(number_grid[2][1])
+
+for row in number_grid:    # FUNZIONE PER ACCEDERE ALLA PRIMA LISTA QUINDI LA PRINCPIALE
+    for col in row:        # FUNZIONE PER ACCEDERE ALLA SECONDA LISTA QUINDI LA SECONDARIA
+        print(col)
+
+# BUILD A TRANSLATOR
+
+def translate(phrase):
+    translation = ''
+    for letter in phrase:
+        if letter.lower() in 'aeiou':
+            if letter.isupper():
+                translation = translation + 'G'
+            else:
+                translation = translation + 'g'
+
+        else:
+            translation = translation + letter
+    return translation
+
+print(translate(input('Enter a phrase')))
+
+#  COMMENTS
+
+print('Comments are fun')
+'''
+wfnieafjieFJwo
+ieofaWJFIOAEJFCVEIO
+isjioerjgieojgioarejPOJORSEPJFGOREJOP
+rieogjoirejgoriepjgkfopojdfiovjsdfo
+'''
+# This program il cool
+
+#  TRY AND EXCEPT  QUANDO USO PYTHON POSSO TROVARE DEGLI ERRORI CHE NON SO COME COPORTARMI
+
+try:
+    value = 10 / 0
+    number = int(input('Enter a number: '))     # QUESTA FUNZIONE TRY + EXCEPT LA POSSO UTILIZZARE PER PROVARE DEI COMANDI SEZAN CHE IL MIO PROGRAMMA MIA DA ERRORI
+except      #  QUESTO CATTURA QUALSIASI ERRORE
+    print('invalid in put')
+
+#  READING FILES IN PYTHON
 
