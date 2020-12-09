@@ -1,4 +1,4 @@
-
+''''
 #  WORKING WITH STRINGS
 
 print("Giraffe\nAcademy")  # a capo
@@ -233,10 +233,10 @@ print(translate(input('Enter a phrase')))
 
 print('Comments are fun')
 '''
-wfnieafjieFJwo
-ieofaWJFIOAEJFCVEIO
-isjioerjgieojgioarejPOJORSEPJFGOREJOP
-rieogjoirejgoriepjgkfopojdfiovjsdfo
+#wfnieafjieFJwo
+#ieofaWJFIOAEJFCVEIO
+#isjioerjgieojgioarejPOJORSEPJFGOREJOP
+#rieogjoirejgoriepjgkfopojdfiovjsdfo
 '''
 # This program il cool
 
@@ -249,4 +249,6 @@ except      #  QUESTO CATTURA QUALSIASI ERRORE
     print('invalid in put')
 
 #  READING FILES IN PYTHON
-
+'''
+open('prova.txt', 'r')
+print(open)
